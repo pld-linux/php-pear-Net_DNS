@@ -2,8 +2,8 @@
 %define         _class          Net
 %define         _subclass       DNS
 %define		_pearname	%{_class}_%{_subclass}
-Summary:	%{_class}_%{_subclass} - Resolver library to communicate with a DNS server
-Summary(pl):	%{_class}_%{_subclass} - Biblioteka resolvera u¿ywana do komunikacji z serwerem DNS
+Summary:	%{_pearname} - Resolver library to communicate with a DNS server
+Summary(pl):	%{_pearname} - Biblioteka resolvera u¿ywana do komunikacji z serwerem DNS
 Name:		php-pear-%{_pearname}
 Version:	0.03
 Release:	1
