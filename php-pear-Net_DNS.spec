@@ -26,7 +26,7 @@ object hierarchy from a DNS server's response, which allows you to
 view all of the information given by the DNS server. It bypasses the
 system's resolver library and communicates directly with the server.
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Biblioteka resolvera jest u¿ywana w komunikacji z serwerami nazw do
