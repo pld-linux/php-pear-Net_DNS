@@ -32,7 +32,7 @@ In PEAR status of this package is: %{_status}.
 Biblioteka resolvera jest u¿ywana w komunikacji z serwerami nazw do
 przygotowania zapytañ DNS, transferów stref, aktualizacji dynamicznego
 DNS, itd. Tworzy hierarchiê obiektów z odpowiedzi serwera DNS, która
-pozwala zobaczyæ wszystkie informacje dawane przez server DNS. To
+pozwala zobaczyæ wszystkie informacje dawane przez serwer DNS. To
 omija systemowy resolver i komunikuje siê bezpo¶rednio z serwerem.
 
 Ta klasa ma w PEAR status: %{_status}.
