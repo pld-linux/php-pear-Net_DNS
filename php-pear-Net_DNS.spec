@@ -1,10 +1,11 @@
 %include	/usr/lib/rpm/macros.php
-%define         _class          Net
-%define         _subclass       DNS
+%define		_class		Net
+%define		_subclass	DNS
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
-Summary:	%{_pearname} - Resolver library to communicate with a DNS server
-Summary(pl):	%{_pearname} - Biblioteka resolvera u¿ywana do komunikacji z serwerem DNS
+
+Summary:	%{_pearname} - resolver library to communicate with a DNS server
+Summary(pl):	%{_pearname} - biblioteka resolvera u¿ywana do komunikacji z serwerem DNS
 Name:		php-pear-%{_pearname}
 Version:	1.00
 Release:	0.b2
