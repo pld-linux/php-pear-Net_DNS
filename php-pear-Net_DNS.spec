@@ -5,7 +5,7 @@
 Summary:	%{_class}_%{_subclass} - Resolver library to communicate with a DNS server
 Summary(pl):	%{_class}_%{_subclass} - Biblioteka resolvera u¿ywana do komunikacji z serwerem DNS
 Name:		php-pear-%{_pearname}
-Version:	0.02
+Version:	0.03
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
