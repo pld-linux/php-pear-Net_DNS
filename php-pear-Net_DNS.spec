@@ -7,12 +7,13 @@
 Summary:	%{_pearname} - resolver library to communicate with a DNS server
 Summary(pl):	%{_pearname} - biblioteka resolvera u¿ywana do komunikacji z serwerem DNS
 Name:		php-pear-%{_pearname}
-Version:	1.00
-Release:	0.b2.1
+Version:	1.0.0
+%define		_suf b3
+Release:	0.%{_suf}.1
 License:	LGPL
 Group:		Development/Languages/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}b2.tgz
-# Source0-md5:	fe0c4e4603f917093888f50c308a746d
+Source0:	http://pear.php.net/get/%{_pearname}-%{version}%{_suf}.tgz
+# Source0-md5:	989985f8487a8c32c054cdd7ac539f93
 URL:		http://pear.php.net/package/Net_DNS/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
@@ -44,17 +45,14 @@ Ta klasa ma w PEAR status: %{_status}.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/RR
 
-install %{_pearname}-%{version}b2/*.php	$RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
-install %{_pearname}-%{version}b2/%{_subclass}/*.php	$RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
-install %{_pearname}-%{version}b2/%{_subclass}/RR/*.php	$RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/RR
+install %{_pearname}-%{version}%{_suf}/*.php	$RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
+install %{_pearname}-%{version}%{_suf}/%{_subclass}/*.php	$RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
+install %{_pearname}-%{version}%{_suf}/%{_subclass}/RR/*.php	$RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/RR
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%dir %{php_pear_dir}/%{_class}/%{_subclass}
-%dir %{php_pear_dir}/%{_class}/%{_subclass}/RR
 %{php_pear_dir}/%{_class}/*.php
-%{php_pear_dir}/%{_class}/%{_subclass}/*.php
-%{php_pear_dir}/%{_class}/%{_subclass}/RR/*.php
+%{php_pear_dir}/%{_class}/%{_subclass}
