@@ -9,7 +9,7 @@ Summary(pl):	%{_pearname} - biblioteka resolvera u¿ywana do komunikacji z serwer
 Name:		php-pear-%{_pearname}
 Version:	1.0.0
 %define		_beta b3
-%define		_rel 1.2
+%define		_rel 2
 Release:	0.%{_suf}.%{_rel}
 License:	LGPL
 Group:		Development/Languages/PHP
