@@ -1,14 +1,16 @@
+# NOTE
+# - mhash used only in RR/TSIG, so we mark it optional
+#
 %include	/usr/lib/rpm/macros.php
 %define		_class		Net
 %define		_subclass	DNS
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
-
 Summary:	%{_pearname} - resolver library to communicate with a DNS server
 Summary(pl):	%{_pearname} - biblioteka resolvera u¿ywana do komunikacji z serwerem DNS
 Name:		php-pear-%{_pearname}
 Version:	1.0.0
-Release:	4
+Release:	5
 License:	LGPL
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -17,7 +19,6 @@ URL:		http://pear.php.net/package/Net_DNS/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
-Requires:	php(mhash)
 Requires:	php-common >= 3:4.2
 Requires:	php-pear
 BuildArch:	noarch
@@ -43,6 +44,7 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %pear_package_setup
+echo '%{name} optionally use PHP extension "mhash"' >> install.log
 
 %install
 rm -rf $RPM_BUILD_ROOT
