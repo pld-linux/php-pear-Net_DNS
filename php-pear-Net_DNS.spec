@@ -7,7 +7,7 @@
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_pearname} - resolver library to communicate with a DNS server
-Summary(pl):	%{_pearname} - biblioteka resolvera u¿ywana do komunikacji z serwerem DNS
+Summary(pl.UTF-8):   %{_pearname} - biblioteka resolvera uÅ¼ywana do komunikacji z serwerem DNS
 Name:		php-pear-%{_pearname}
 Version:	1.0.0
 Release:	5
@@ -33,12 +33,12 @@ system's resolver library and communicates directly with the server.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Biblioteka resolvera jest u¿ywana w komunikacji z serwerami nazw do
-przygotowania zapytañ DNS, transferów stref, aktualizacji dynamicznego
-DNS, itd. Tworzy hierarchiê obiektów z odpowiedzi serwera DNS, która
-pozwala zobaczyæ wszystkie informacje dawane przez serwer DNS. To
-omija systemowy resolver i komunikuje siê bezpo¶rednio z serwerem.
+%description -l pl.UTF-8
+Biblioteka resolvera jest uÅ¼ywana w komunikacji z serwerami nazw do
+przygotowania zapytaÅ„ DNS, transferÃ³w stref, aktualizacji dynamicznego
+DNS, itd. Tworzy hierarchiÄ™ obiektÃ³w z odpowiedzi serwera DNS, ktÃ³ra
+pozwala zobaczyÄ‡ wszystkie informacje dawane przez serwer DNS. To
+omija systemowy resolver i komunikuje siÄ™ bezpoÅ›rednio z serwerem.
 
 Ta klasa ma w PEAR status: %{_status}.
 
