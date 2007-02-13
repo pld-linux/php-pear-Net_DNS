@@ -7,7 +7,7 @@
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_pearname} - resolver library to communicate with a DNS server
-Summary(pl.UTF-8):   %{_pearname} - biblioteka resolvera używana do komunikacji z serwerem DNS
+Summary(pl.UTF-8):	%{_pearname} - biblioteka resolvera używana do komunikacji z serwerem DNS
 Name:		php-pear-%{_pearname}
 Version:	1.0.0
 Release:	5
