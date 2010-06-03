@@ -9,12 +9,12 @@
 Summary:	%{_pearname} - resolver library to communicate with a DNS server
 Summary(pl.UTF-8):	%{_pearname} - biblioteka resolvera używana do komunikacji z serwerem DNS
 Name:		php-pear-%{_pearname}
-Version:	1.0.0
-Release:	6
+Version:	1.0.1
+Release:	1
 License:	LGPL
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	1cc082bec28189847083e2c42c2d9b2d
+# Source0-md5:	04d403057c787d19dd3d06b2f093e4b6
 URL:		http://pear.php.net/package/Net_DNS/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
