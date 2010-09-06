@@ -10,11 +10,12 @@ Summary:	%{_pearname} - resolver library to communicate with a DNS server
 Summary(pl.UTF-8):	%{_pearname} - biblioteka resolvera używana do komunikacji z serwerem DNS
 Name:		php-pear-%{_pearname}
 Version:	1.0.5
-Release:	1
+Release:	2
 License:	LGPL
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	16f9533b49c581e55b5be7512e5733c1
+Patch0:		%{name}-missing-vars.patch
 URL:		http://pear.php.net/package/Net_DNS/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -50,6 +51,8 @@ echo '%{name} can optionally use PHP extension "mhash"' >> install.log
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{php_pear_dir}
 %pear_package_install
+
+%patch0 -p1
 
 # don't care for tests
 rm -rf $RPM_BUILD_ROOT%{php_pear_dir}/tests/*

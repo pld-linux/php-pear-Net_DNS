@@ -1,0 +1,11 @@
+--- Net_DNS-1.0.5/usr/share/pear/Net/DNS/RR.php~	2010-09-06 12:46:31.592550602 +0200
++++ Net_DNS-1.0.5/usr/share/pear/Net/DNS/RR.php	2010-09-06 12:47:23.197926557 +0200
+@@ -51,6 +51,8 @@
+     var $ttl;
+     var $rdlength;
+     var $rdata;
++    var $INT32SZ = 4;
++    var $INT16SZ = 2;
+     /* }}} */
+ 
+     /*
