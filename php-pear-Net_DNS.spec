@@ -54,9 +54,6 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{php_pear_dir}
 %pear_package_install
 
-# don't care for tests
-rm -rf $RPM_BUILD_ROOT%{php_pear_dir}/tests/*
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
