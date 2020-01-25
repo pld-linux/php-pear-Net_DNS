@@ -3,7 +3,6 @@
 #
 %define		_status		stable
 %define		_pearname	Net_DNS
-%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - resolver library to communicate with a DNS server
 Summary(pl.UTF-8):	%{_pearname} - biblioteka resolvera używana do komunikacji z serwerem DNS
 Name:		php-pear-%{_pearname}
