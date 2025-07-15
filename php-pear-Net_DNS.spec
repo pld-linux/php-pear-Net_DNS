@@ -44,7 +44,7 @@ Ta klasa ma w PEAR status: %{_status}.
 %pear_package_setup
 echo '%{name} can optionally use PHP extension "mhash"' >> install.log
 
-%patch0 -p1
+%patch -P0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
